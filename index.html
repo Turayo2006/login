@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="test.css">
+  
+    <script src="https://kit.fontawesome.com/dad03e859c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <form id="login-form" class="register" onsubmit="return myfunc()">
+<h1>Register</h1>
+<p class="username">Username</p>
+<label><img id="user" src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png"/>
+<input class="name" placeholder="Type your username" id="username">
+</input></label>
+ 
+  <p class="username">Full name</p>
+<label><img id="user" src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png"/>
+<input class="name" placeholder="Type your full name" id="fullname">
+</input></label>
+ 
+<p class="pass">Password</p>
+<label><img class="password-img" src="https://iconarchive.com/download/i91631/icons8/windows-8/Security-Password-2.ico"/>
+<input class="name" placeholder="Type your password" id="password" type="password">
+</input></label>
+
+<p class="pass"> Confirm Password</p>
+<label><img class="password-img" src="https://iconarchive.com/download/i91631/icons8/windows-8/Security-Password-2.ico"/>
+<input class="name" placeholder="Confirm your password" id="password" type="password">
+</input></label>
+
+<button id="login" type="submit">REGISTER</button>
+<!-- <input id="login" type="submit" value="REGISTER"/> -->
+  <p id="sign-up">Already have an account</p>
+  <p id="sign-up2"><a href="#" onclick="switchForm('login', event)"> LOGIN</a></p>
+    </form>
+
+
+<form id="login-form" class="login active" onsubmit="return myfunc()">
+<h1>Login</h1>
+<p class="username">Username</p>
+<label><img id="user" src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png"/>
+<input class="name" placeholder="Type your username" id="username">
+</input></label>
+ 
+  <p class="username">Email</p>
+<label><img id="user" src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png"/>
+<input class="name" placeholder="Type your full name" id="fullname">
+</input></label>
+ 
+<p class="pass">Password</p>
+<label><img class="password-img" src="https://iconarchive.com/download/i91631/icons8/windows-8/Security-Password-2.ico"/>
+<input class="name" placeholder="Type your password" id="password" type="password">
+</input></label>
+<p id="forgot-password"><a href="#Forgot-Password?">Forgot Password?</a></p>
+
+<button id="login" type="submit">LOGIN</button>
+<!-- <p id="sign-up">Or Login using</p>
+  <div class="icons">
+<a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+<a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+<a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+<a href="#"><ion-icon name="logo-google"></ion-icon></a>
+<a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+  </div> -->
+  <p id="sign-up">Dont have an account</p>
+  <p id="sign-up2"><a href="#" onclick="switchForm('register', event)"> REGISTER</a></p>
+    </form>
+</div>
+
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
